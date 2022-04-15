@@ -1,0 +1,10 @@
+//Creating routes
+
+Route::get(‘/’,); { return ''}
+
+//Creating controllers
+php artisan make:controller MainController 
+php artisan make:controller PostsController 
+
+//Connecting controllers to routes
+Route::get('/',[MainController::class,'index'] );
